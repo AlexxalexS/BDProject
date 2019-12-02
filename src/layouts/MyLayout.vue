@@ -3,8 +3,9 @@
       <q-header reveal elevated class="text-white bg-black q-px-md q-py-sm">
       <q-toolbar v-if="width >= 992"  class="row">
         <q-toolbar-title class="header-logo flex items-center">
-          <img src="../assets/log.png" alt="">
-          <q-btn class="q-ml-xl text-h6">КАТАЛОГ</q-btn>
+          <a href="/"> <img src="../assets/log.png" alt=""></a>
+          <q-btn to="/" class="q-ml-xl text-h6">ГЛАВНАЯ</q-btn>
+          <q-btn to="/catalog" class="q-ml-xl text-h6">КАТАЛОГ</q-btn>
         </q-toolbar-title>
         <q-list class=" text-h6 flex justify-between items-center">
             <q-item class="text-white q-mr-xl" clickable to="/">
