@@ -2,8 +2,6 @@
     <div class="row">
       <div class="col-12">
         <img src="../statics/img/backgrounggirl.jpg" style="width: 100%   ">
-        <img src="../statics/img/backgrounggirl.jpg" style="width: 100%   ">
-        <img src="../statics/img/backgrounggirl.jpg" style="width: 100%   ">
       </div>
     </div>
 </template>
