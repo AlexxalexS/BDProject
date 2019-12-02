@@ -13,8 +13,8 @@ const routes = [
         component: () => import('pages/contacts.vue')
       },
       {
-        path: 'catalog',
-        component: () => import('pages/catalog.vue')
+        path: 'reg',
+        component: () => import('pages/reg.vue')
       }
     ]
   },
