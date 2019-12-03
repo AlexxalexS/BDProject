@@ -19,6 +19,10 @@ const routes = [
       {
         path: 'input',
         component: () => import('pages/input.vue')
+      },
+      {
+        path: 'card',
+        component: () => import('pages/card.vue')
       }
     ]
   },
