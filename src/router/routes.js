@@ -27,7 +27,7 @@ const routes = [
     component: () => import('layouts/CleanLayout.vue'),
     children: [
       { path: 'login', component: () => import('pages/login.vue') },
-      { path: 'register', component: () => import('pages/register.vue') }
+      { path: 'register', component: () => import('pages/reg.vue') }
     ]
   }
 ]
