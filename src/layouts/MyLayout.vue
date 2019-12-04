@@ -21,6 +21,7 @@
           <q-item class="text-white" clickable to="/articles">
             <q-item-section>
               <img src="../assets/bucket.png" alt="">
+              <q-badge floating color="red">{{this.$store.state.quant}}</q-badge>
             </q-item-section>
           </q-item>
         </q-list>

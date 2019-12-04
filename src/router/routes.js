@@ -13,6 +13,10 @@ const routes = [
         component: () => import('pages/contacts.vue')
       },
       {
+        path: 'reg',
+        component: () => import('pages/reg.vue')
+      },
+      {
         path: 'catalog',
         component: () => import('pages/catalog.vue')
       },

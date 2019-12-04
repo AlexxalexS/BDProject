@@ -5,12 +5,17 @@ import auth from './auth'
 
 Vue.use(Vuex)
 
-export default function () {
-  return new Vuex.Store({
-    modules: {
-      article,
-      auth
-    },
-    strict: process.env.DEV
-  })
-}
+export default new Vuex.Store({
+  state: {
+    quant: 7
+  },
+  mutations: {
+  },
+  actions: {
+  },
+  modules: {
+    article,
+    auth
+  },
+  strict: process.env.DEV
+})
