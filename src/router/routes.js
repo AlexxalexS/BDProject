@@ -13,12 +13,21 @@ const routes = [
         component: () => import('pages/contacts.vue')
       },
       {
+<<<<<<< HEAD
         path: 'reg',
         component: () => import('pages/reg.vue')
       },
       {
         path: 'catalog',
         component: () => import('pages/catalog.vue')
+=======
+        path: 'catalog',
+        component: () => import('pages/catalog.vue')
+      },
+      {
+        path: 'input',
+        component: () => import('pages/input.vue')
+>>>>>>> 15daac7e73249cabca243e66dccb35709ba6dd16
       }
     ]
   },
@@ -27,7 +36,7 @@ const routes = [
     component: () => import('layouts/CleanLayout.vue'),
     children: [
       { path: 'login', component: () => import('pages/login.vue') },
-      { path: 'register', component: () => import('pages/register.vue') }
+      { path: 'register', component: () => import('pages/reg.vue') }
     ]
   }
 ]
