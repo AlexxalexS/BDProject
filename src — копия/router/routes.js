@@ -21,20 +21,8 @@ const routes = [
         component: () => import('pages/catalog.vue')
       },
       {
-        path: 'catalog',
-        component: () => import('pages/catalog.vue')
-      },
-      {
         path: 'input',
         component: () => import('pages/input.vue')
-      },
-      {
-        path: 'card',
-        component: () => import('pages/card.vue')
-      },
-      {
-        path: 'basket',
-        component: () => import('pages/basket.vue')
       }
     ]
   },
