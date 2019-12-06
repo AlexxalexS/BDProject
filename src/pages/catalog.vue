@@ -166,6 +166,7 @@
         <div class="col-1"></div>
       </div>
     </div>
+    <div class="text-h5 text-center  text-red-8">Items:{{this.itms}}</div>
   </q-page>
 </template>
 
@@ -177,7 +178,8 @@ export default {
     return {
       label: {
         min: 350,
-        max: 1000
+        max: 1000,
+        items: null
       }
     }
   },
