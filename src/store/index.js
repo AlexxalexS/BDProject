@@ -2,12 +2,14 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import article from './article'
 import auth from './auth'
+import items from './items'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    quant: 7
+    quant: 7,
+    items: []
   },
   mutations: {
   },
@@ -15,7 +17,8 @@ export default new Vuex.Store({
   },
   modules: {
     article,
-    auth
+    auth,
+    items
   },
   strict: process.env.DEV
 })

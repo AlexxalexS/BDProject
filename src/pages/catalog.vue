@@ -170,6 +170,7 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'catalog',
   data () {
@@ -179,6 +180,20 @@ export default {
         max: 1000
       }
     }
+  },
+  computed: {
+    ...mapGetters({
+      itms: 'items/items'
+    })
+  },
+  mounted () {
+    this.getItems()
+    this.items = this.itms
+  },
+  methods: {
+    ...mapActions({
+      getItems: 'items/getItems'
+    })
   }
 }
 </script>
