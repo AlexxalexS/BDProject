@@ -20,7 +20,7 @@
           </q-item>
           <q-item class="text-white" clickable to="/articles">
             <q-item-section>
-              <img src="../assets/bucket.png" alt="">
+              <a href="/"> <img src="../assets/bucket.png" alt=""></a>
               <q-badge floating color="red">{{this.$store.state.quant}}</q-badge>
             </q-item-section>
           </q-item>
@@ -28,7 +28,7 @@
       </q-toolbar>
       <q-toolbar v-else class="row q-px-none">
         <q-toolbar-title class="header-logo flex items-center q-px-none">
-          <img src="../assets/Logo.png" alt="">
+          <a href="/"> <img src="../assets/log.png" alt=""></a>
         </q-toolbar-title>
         <q-btn  flat class="q-pa-sm" icon="menu">
           <q-menu max-width="600" anchor="top right" self="bottom right">
