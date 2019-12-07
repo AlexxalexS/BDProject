@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-1"></div>
       <div class="col-6 q-mt-xl">
-      <div class="text-h5">Ваш заказ :</div>
+      <div class="q-mb-md text-h5">Ваш заказ :</div>
         <div class="bg-grey-3  q-py-md q-pa-lg">
           <q-card class="row  my-card bg-grey-3   no-border no-shadow">
           <q-card-section class="col-3">
@@ -69,8 +69,8 @@
           mask="+7 (###) ### - ####"
         />
         <q-input class="q-mb-lg" v-model="email" outlined type="email" label="Email" />
-        <!--<q-input
-          filled
+        <q-input
+          outlined
           type="number"
           v-model="age"
           label="Ваш возраст"
@@ -81,7 +81,7 @@
           val => val > 17 && val < 100 || 'Введите ваш возраст'
         ]"
         />
-        <q-toggle v-model="accept" label="Согласие на обработку персональных данных" />-->
+        <q-toggle v-model="accept" label="Согласие на обработку персональных данных" />
         <div>
           <div class="text-body1 q-mb-md">Пункт выдачи:</div>
           <div class="q-gutter-sm q-mb-lg column justify-between">
