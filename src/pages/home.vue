@@ -97,22 +97,22 @@ export default {
   components: {},
   data () {
     return {
-      articles: null,
+      items: null,
       slide: 'first'
     }
   },
   computed: {
     ...mapGetters({
-      artc: 'article/articles'
+      itms: 'items/items'
     })
   },
   mounted () {
-    this.getArticles()
-    this.articles = this.artc
+    this.getItems()
+    this.items = this.itms
   },
   methods: {
     ...mapActions({
-      getArticles: 'article/getArticles'
+      getItems: 'items/getItems'
     })
   }
 }
