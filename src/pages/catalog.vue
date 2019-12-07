@@ -47,138 +47,44 @@
         <div class="col-1"></div>
         <div class="col-10 ">
           <div class="row q-py-lg  justify-center  items-center">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
-              <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
-                <q-card-section>
-                  <div class="text-h6">Vandy Vape Swell-боксмод</div>
-                </q-card-section>
-                <q-card-section>
-                  <div class="row flex items-center justify-center ">
-                    <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                    <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
-                  </div>
-                </q-card-section>
-              </q-card>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
-              <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
-                <q-card-section>
-                  <div class="text-h6">Vandy Vape Swell-боксмод</div>
-                </q-card-section>
-                <q-card-section>
-                  <div class="row flex items-center justify-center ">
-                    <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                    <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
-                  </div>
-                </q-card-section>
-              </q-card>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
-              <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
-                <q-card-section>
-                  <div class="text-h6">Vandy Vape Swell-боксмод</div>
-                </q-card-section>
-                <q-card-section>
-                  <div class="row flex items-center justify-center ">
-                    <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                    <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
-                  </div>
-                </q-card-section>
-              </q-card>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
-              <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
-                <q-card-section>
-                  <div class="text-h6">Vandy Vape Swell-боксмод</div>
-                </q-card-section>
-                <q-card-section>
-                  <div class="row flex items-center justify-center ">
-                    <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                    <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
-                  </div>
-                </q-card-section>
-              </q-card>
-            </div>
-          </div>
-          <div class="row q-py-lg  justify-center  items-center">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
-              <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
-                <q-card-section>
-                  <div class="text-h6">Vandy Vape Swell-боксмод</div>
-                </q-card-section>
-                <q-card-section>
-                  <div class="row flex items-center justify-center ">
-                    <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                    <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
-                  </div>
-                </q-card-section>
-              </q-card>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
-              <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
-                <q-card-section>
-                  <div class="text-h6">Vandy Vape Swell-боксмод</div>
-                </q-card-section>
-                <q-card-section>
-                  <div class="row flex items-center justify-center ">
-                    <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                    <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
-                  </div>
-                </q-card-section>
-              </q-card>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
-              <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
-                <q-card-section>
-                  <div class="text-h6">Vandy Vape Swell-боксмод</div>
-                </q-card-section>
-                <q-card-section>
-                  <div class="row flex items-center justify-center ">
-                    <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                    <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
-                  </div>
-                </q-card-section>
-              </q-card>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
-              <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
-                <q-card-section>
-                  <div class="text-h6">Vandy Vape Swell-боксмод</div>
-                </q-card-section>
-                <q-card-section>
-                  <div class="row flex items-center justify-center ">
-                    <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                    <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
-                  </div>
-                </q-card-section>
-              </q-card>
-            </div>
+            <itemCatalog v-for="item in items" :item="item" :key="item.id"/>
           </div>
         </div>
         <div class="col-1"></div>
       </div>
     </div>
+    <div class="text-h5 text-center  text-red-8">Items: {{this.itms}}</div>
   </q-page>
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
+import itemCatalog from '../components/item_catalog'
 export default {
   name: 'catalog',
+  components: { itemCatalog },
   data () {
     return {
       label: {
         min: 350,
-        max: 1000
+        max: 1000,
+        items: null
       }
     }
+  },
+  computed: {
+    ...mapGetters({
+      itms: 'items/items'
+    })
+  },
+  mounted () {
+    this.getItems()
+    this.items = this.itms
+  },
+  methods: {
+    ...mapActions({
+      getItems: 'items/getItems'
+    })
   }
 }
 </script>
