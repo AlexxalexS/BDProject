@@ -29,6 +29,34 @@ const routes = [
         component: () => import('pages/input.vue')
       },
       {
+        path: 'vape',
+        component: () => import('pages/vape.vue')
+      },
+      {
+        path: 'pod',
+        component: () => import('pages/pod.vue')
+      },
+      {
+        path: 'liquid',
+        component: () => import('pages/liquid.vue')
+      },
+      {
+        path: 'accessories',
+        component: () => import('pages/accessories.vue')
+      },
+      {
+        path: 'mod',
+        component: () => import('pages/mod.vue')
+      },
+      {
+        path: 'wliquid',
+        component: () => import('pages/wliquid.vue')
+      },
+      {
+        path: 'atom',
+        component: () => import('pages/atom.vue')
+      },
+      {
         path: 'card',
         component: () => import('pages/card.vue')
       }
