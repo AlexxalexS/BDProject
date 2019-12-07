@@ -1,17 +1,14 @@
 <template>
-  <div :class="size ==='small' ? 'col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12' : 'col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12'">
-    <q-card class="card q-ma-md">
-      <q-card-section class="q-pa-none q-mb-lg">
-        <q-img
-          placeholder-src="statics/img-placeholder.png"
-        />
+  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
+    <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
+      <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+      <q-card-section>
+        <div class="text-h6">{{item.title}}</div>
       </q-card-section>
-      <q-card-section class="q-px-lg q-py-md">
-        <div class="q-py-md q-px-sm text-blue-2 text-h5">{{ article.categories[0] }}</div>
-        <div class="q-mb-lg q-px-sm article text-h4 ">{{ article.content }}</div>
-        <div class="q-mt-lg q-px-sm footer text-h5 text-grey-2 flex justify-between">
-          <router-link :to="{name: 'article.name',params: {id: article.id}}"><div >{{article.author.name}}</div></router-link>
-          <div>{{ article.created_at }}</div>
+      <q-card-section>
+        <div class="row flex items-center justify-center ">
+          <div class="col-12 text-h5 text-center  text-red-8">{{item.price}} руб./шт</div>
+          <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
         </div>
       </q-card-section>
     </q-card>
@@ -21,7 +18,7 @@
 <script>
 export default {
   name: 'item_catalog',
-  props: []
+  props: ['item']
 }
 </script>
 

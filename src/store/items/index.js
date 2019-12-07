@@ -13,7 +13,7 @@ const actions = {
     return new Promise((resolve, reject) => {
       API1.get('product')
         .then(response => {
-          context.commit('GET_ITEMS', response)
+          context.commit('GET_ITEMS', response.data[0])
           resolve(response)
         })
         .catch(error => {
