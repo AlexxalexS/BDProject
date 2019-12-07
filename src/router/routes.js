@@ -55,6 +55,10 @@ const routes = [
       {
         path: 'atom',
         component: () => import('pages/atom.vue')
+      },
+      {
+        path: 'card',
+        component: () => import('pages/card.vue')
       }
     ]
   },
