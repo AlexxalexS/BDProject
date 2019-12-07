@@ -25,14 +25,14 @@
                     </div>
                   </q-card-section>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-12 flex items-center justify-center">
-                  <q-card-section class="text-grey-8">Сортировать по: </q-card-section>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 q-mb-sm flex flex items-center justify-center">
-                    <q-btn outline color="accent" label="Рйтингу" />
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 q-mb-sm flex flex items-center justify-center ">
-                      <q-btn outline color="accent" label="Цене" />
+                  <div class="col-md-2 col-sm-4 col-xs-12 flex items-center justify-center">
+                    <q-card-section class=" text-grey-8 ">Сортировать по: </q-card-section>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-xs-6 q-mb-sm flex flex items-center justify-center">
+                    <q-btn  class="" outline color="accent" label="Рйтингу" />
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-xs-6 q-mb-sm flex flex items-center justify-center " >
+                    <q-btn  class="" outline color="accent" label="Цене" />
                 </div>
               </div>
             </div>
@@ -87,6 +87,7 @@ export default {
     })
   }
 }
+
 </script>
 
 <style scoped>

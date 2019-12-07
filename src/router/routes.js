@@ -35,6 +35,10 @@ const routes = [
       {
         path: 'basket',
         component: () => import('pages/basket.vue')
+      },
+      {
+        path: 'account',
+        component: () => import('pages/account.vue')
       }
     ]
   },

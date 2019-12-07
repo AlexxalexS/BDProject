@@ -16,9 +16,9 @@
                       thumbnails
                       infinite
                     >
-                      <q-carousel-slide :name="1" img-src="../statics/img/image1.png" style="height: 80%; width: auto"/>
-                      <q-carousel-slide :name="2" img-src="../statics/img/image2.png" style="height: 80%; width: auto"/>
-                      <q-carousel-slide :name="3" img-src="../statics/img/image3.png" style="height: 80%; width: auto"/>
+                      <q-carousel-slide :name="1" img-src="../statics/img/11.png" style="width: "/>
+                      <q-carousel-slide :name="2" img-src="../statics/img/22.png" />
+                      <q-carousel-slide :name="3" img-src="../statics/img/33.png"/>
                     </q-carousel>
                   </div>
                   <div class="q-pa-md flex justify-center ">

@@ -3,7 +3,7 @@
   <q-page class="q-py-lg q-px-md">
     <div class="container">
       <div class="row">
-        <div class="col-7">
+        <div class="col-md-7 col-sm-12 col-xs-12">
           <div class="up flex column justify-center items-center">
             <label class="text-h4 q-mb-md">Мы рады видеть вас на нашем сайте!</label>
             <div class="row items-center">
@@ -27,7 +27,7 @@
             <label style="width:50%;" class="text-h7 text-weight-light text-center q-mt-md">Создайте учетную запись, чтобы отслеживать свой заказ, смотреть историю покупок и добавлять товары в избранное. </label>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12 col-xs-12">
           <div class="up2">
             <q-card>
               <q-card-section class="flex column justify-center">
