@@ -53,7 +53,7 @@
         <div class="col-1"></div>
       </div>
     </div>
-    <div class="text-h5 text-center  text-red-8">Items: {{this.itms}}</div>
+    <div class="text-h5 text-center  text-red-8 ">Items: {{this.itms}}</div>
   </q-page>
 </template>
 
