@@ -2,7 +2,7 @@
   <q-page class="q-py-lg q-px-md">
     <div class="q-py-lg">
       <div class="col-12">
-        <div class="text-h2 text-center q-mb-xl"> Электронные сигареты </div>
+        <div class="text-h3 text-center q-mb-xl"> Электронные сигареты </div>
       </div>
       <div class="row">
         <div class="col-1"></div>
@@ -18,7 +18,7 @@
                         <q-range
                           v-model="label"
                           :min="350"
-                          :max="1000"
+                          :max="9000"
                           :step="4"
                           label
                           color="primary"
@@ -28,14 +28,14 @@
                     </div>
                   </q-card-section>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-12 flex items-center justify-center">
+                <div class="col-md-2 col-sm-4 col-xs-12 flex items-center justify-center" >
                   <q-card-section class="text-grey-8">Сортировать по: </q-card-section>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 q-mb-sm flex flex items-center justify-center">
-                    <q-btn outline color="accent" label="Рейтингу" />
+                <div class="q-pt-sm q-px-sm col-md-2 col-sm-4 col-xs-6 q-mb-sm flex flex items-center justify-center">
+                    <q-btn class=" full-width" outline color="accent" label="Рейтингу" />
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 q-mb-sm flex flex items-center justify-center ">
-                      <q-btn outline color="accent" label="Цене" />
+                <div class="q-pt-sm q-px-sm col-md-2 col-sm-4 col-xs-6 q-mb-sm flex flex items-center justify-center ">
+                      <q-btn class="full-width"  outline color="accent" label="Цене" />
                 </div>
               </div>
             </div>
@@ -69,8 +69,8 @@ export default {
   data () {
     return {
       label: {
-        min: 350,
-        max: 1000,
+        min: 2000,
+        max: 6999,
         items: null
       }
     }
