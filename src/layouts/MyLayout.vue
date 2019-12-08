@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hhh lpR fff">
       <q-header reveal elevated class="text-white bg-black q-px-md q-py-sm">
-      <q-toolbar v-if="width >= 992"  class="justify-between  row">
+      <q-toolbar v-if="width >= 992"  class="justify-between row">
         <q-toolbar-title class="col-lg-3 col-md-3 header-logo flex items-center">
           <a href="/"> <img src="../assets/log.png" alt=""></a>
           <q-btn to="/" class="q-ml-sm text-body1 text-uppercase">ГЛАВНАЯ</q-btn>
@@ -43,7 +43,7 @@
             </q-menu>
           </q-btn>
         </q-toolbar-title>
-        <q-input class="col-lg-6 col-md-5 col-sm-4 " bg-color="white" v-model="search" filled type="search" hint="Search">
+        <q-input class="flex col-lg-6 col-md-5 col-sm-4"  bg-color="white" v-model="search" filled type="search" hint="Search">
           <template v-slot:append>
             <q-icon name="search" />
           </template>
