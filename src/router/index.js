@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import routes from './routes'
+import routes from '../../../src БД/router/routes'
 
 Vue.use(VueRouter)
 
@@ -11,13 +11,18 @@ Vue.use(VueRouter)
  */
 
 export default function (/* { store, ssrContext } */) {
-  return new VueRouter({
+  const Router = new VueRouter({
     scrollBehavior: () => ({ x: 0, y: 0 }),
-    routes,
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes
+
     // Leave these as is and change from quasar.conf.js instead!
     // quasar.conf.js -> build -> vueRouterMode
     // quasar.conf.js -> build -> publicPath
-    mode: process.env.VUE_ROUTER_MODE,
-    base: process.env.VUE_ROUTER_BASE
+    // mode: process.env.VUE_ROUTER_MODE,
+    // base: process.env.VUE_ROUTER_BASE
   })
+
+  return Router
 }
