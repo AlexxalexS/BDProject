@@ -54,7 +54,7 @@
                 </div>
               </div>
             </q-card>
-            <div class="q-pa-md">
+            <div class=" q-mt-xl">
               <div class="q-gutter-y-md" >
                 <q-card>
                   <q-tabs
@@ -89,8 +89,8 @@
                       <p>  Вы можете купить электронную сигарету Logic Compact в фирменном магазине Vardex Вашего города или сделать заказ онлайн, с возможностью доставки по всей России.</p>
                     </q-tab-panel>
 
-                    <q-tab-panel name="feedback">
-                      <div class="q-pa-md">
+                    <q-tab-panel class="q-mt-lg" name="feedback">
+                      <div class="q-mt-md">
                         <q-infinite-scroll @load="onLoad" :offset="250">
                           <div v-for="(item, index) in 5" :key="index" class="caption">
                             <div class="row">
@@ -153,13 +153,22 @@
                   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
                     <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
                       <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+                      <q-rating
+                        class="q-ma-sm absolute-top-right"
+                        v-model="ratingModel"
+                        icon="favorite"
+                        size="2em"
+                        :max="1"
+                        color="purple"
+                      />
+
                       <q-card-section>
-                        <div class="text-h6">Vandy Vape Swell-боксмод</div>
+                        <div class="text-body2">Vandy Vape Swell-боксмод</div>
                       </q-card-section>
-                      <q-card-section>
-                        <div class="row flex items-center justify-center ">
-                          <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                          <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
+                      <q-card-section class="full-width">
+                        <div class="row justify-between ">
+                          <div class="col-5 text-center text-red-8" style="">4490 руб./шт</div>
+                          <div class="col-5 flex justify-center items-center" style="width: 111px"><q-btn size="sm" outline color="accent" label="В корзину"/></div>
                         </div>
                       </q-card-section>
                     </q-card>
@@ -167,13 +176,22 @@
                   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
                     <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
                       <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+                      <q-rating
+                        class="q-ma-sm absolute-top-right"
+                        v-model="ratingModel"
+                        icon="favorite"
+                        size="2em"
+                        :max="1"
+                        color="purple"
+                      />
+
                       <q-card-section>
-                        <div class="text-h6">Vandy Vape Swell-боксмод</div>
+                        <div class="text-body2">Vandy Vape Swell-боксмод</div>
                       </q-card-section>
-                      <q-card-section>
-                        <div class="row flex items-center justify-center ">
-                          <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                          <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
+                      <q-card-section class="full-width">
+                        <div class="row justify-between ">
+                          <div class="col-5 text-center text-red-8" style="">4490 руб./шт</div>
+                          <div class="col-5 flex justify-center items-center" style="width: 111px"><q-btn size="sm" outline color="accent" label="В корзину"/></div>
                         </div>
                       </q-card-section>
                     </q-card>
@@ -181,13 +199,22 @@
                   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
                     <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
                       <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+                      <q-rating
+                        class="q-ma-sm absolute-top-right"
+                        v-model="ratingModel"
+                        icon="favorite"
+                        size="2em"
+                        :max="1"
+                        color="purple"
+                      />
+
                       <q-card-section>
-                        <div class="text-h6">Vandy Vape Swell-боксмод</div>
+                        <div class="text-body2">Vandy Vape Swell-боксмод</div>
                       </q-card-section>
-                      <q-card-section>
-                        <div class="row flex items-center justify-center ">
-                          <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                          <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
+                      <q-card-section class="full-width">
+                        <div class="row justify-between ">
+                          <div class="col-5 text-center text-red-8" style="">4490 руб./шт</div>
+                          <div class="col-5 flex justify-center items-center" style="width: 111px"><q-btn size="sm" outline color="accent" label="В корзину"/></div>
                         </div>
                       </q-card-section>
                     </q-card>
@@ -195,13 +222,22 @@
                   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
                     <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
                       <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+                      <q-rating
+                        class="q-ma-sm absolute-top-right"
+                        v-model="ratingModel"
+                        icon="favorite"
+                        size="2em"
+                        :max="1"
+                        color="purple"
+                      />
+
                       <q-card-section>
-                        <div class="text-h6">Vandy Vape Swell-боксмод</div>
+                        <div class="text-body2">Vandy Vape Swell-боксмод</div>
                       </q-card-section>
-                      <q-card-section>
-                        <div class="row flex items-center justify-center ">
-                          <div class="col-12 text-h5 text-center  text-red-8">4490 руб./шт</div>
-                          <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
+                      <q-card-section class="full-width">
+                        <div class="row justify-between ">
+                          <div class="col-5 text-center text-red-8" style="">4490 руб./шт</div>
+                          <div class="col-5 flex justify-center items-center" style="width: 111px"><q-btn size="sm" outline color="accent" label="В корзину"/></div>
                         </div>
                       </q-card-section>
                     </q-card>
