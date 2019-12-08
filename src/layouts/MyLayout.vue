@@ -1,37 +1,60 @@
 <template>
   <q-layout view="hhh lpR fff">
       <q-header reveal elevated class="text-white bg-black q-px-md q-py-sm">
-      <q-toolbar v-if="width >= 992"  class="row justify-between">
-        <q-toolbar-title class="col-3 header-logo flex items-center">
+      <q-toolbar v-if="width >= 992"  class="row">
+        <q-toolbar-title class="header-logo flex items-center">
           <a href="/"> <img src="../assets/log.png" alt=""></a>
-          <!--<q-btn to="/" class="q-ml-xl text-body1 text-uppercase">ГЛАВНАЯ</q-btn>-->
-        <q-btn to="/catalog" class="q-ml-xl text-body1 text-uppercase">КАТАЛОГ</q-btn>
-          <!--<q-btn to="/contacts" class="q-ml-xl text-body1 text-uppercase">О НАС</q-btn>-->
+          <q-btn to="/" class="q-ml-xl text-h6">ГЛАВНАЯ</q-btn>
+          <q-btn class="q-ml-xl text-h6" label="Каталог">
+            <q-menu content-class="bg-black text-white">
+              <q-list style="min-width: 100px">
+                <q-item clickable to="/vape" v-close-popup>
+                  <q-item-section>Электронные сигареты</q-item-section>
+                </q-item>
+                <q-separator dark/>
+                <q-item clickable to="/pod" v-close-popup>
+                  <q-item-section>Pod-системы</q-item-section>
+                </q-item>
+                <q-separator dark/>
+                <q-item clickable to="/mod" v-close-popup>
+                  <q-item-section>Моды</q-item-section>
+                </q-item>
+                <q-separator dark/>
+                <q-item clickable to="/wliquid" v-close-popup>
+                  <q-item-section>Бестабачные смеси</q-item-section>
+                </q-item>
+                <q-separator dark/>
+                <q-item clickable to="/vape" v-close-popup>
+                  <q-item-section>Системы нагревания табака</q-item-section>
+                </q-item>
+                <q-separator dark/>
+                <q-item clickable to="/liquid" v-close-popup>
+                  <q-item-section>Жидкости</q-item-section>
+                </q-item>
+                <q-separator dark/>
+                <q-item clickable to="/atom" v-close-popup>
+                  <q-item-section>Атомайзеры</q-item-section>
+                </q-item>
+                <q-separator dark/>
+                <q-item clickable to="/accessories" v-close-popup>
+                  <q-item-section>Аксессуары</q-item-section>
+                </q-item>
+              </q-list>
+            </q-menu>
+          </q-btn>
         </q-toolbar-title>
-        <q-card-section class="col-lg-6 col-md-5 col-sm-4 col-xs-3 ">
-          <q-input
-            bg-color="white"
-            v-model="search"
-            filled
-            placeholder="Search"
-          >
-            <template v-slot:append>
-              <q-icon name="search" />
-            </template>
-          </q-input>
-        </q-card-section>
         <q-list class=" text-h6 flex justify-between items-center">
-            <q-item class="text-white q-mr-md" clickable to="/">
+            <q-item class="text-white q-mr-xl" clickable to="/login">
               <q-item-section>
-                  <q-item-label class="text-body1 text-uppercase">ВХОД</q-item-label>
+                  <q-item-label>ВХОД</q-item-label>
               </q-item-section>
             </q-item>
-          <q-item class="text-white q-mr-md" clickable to="/account">
+          <q-item class="text-white q-mr-xl" clickable to="/lk">
             <q-item-section>
               <img src="../assets/lk.png" alt="">
             </q-item-section>
           </q-item>
-          <q-item class="text-white" clickable to="/basket">
+          <q-item class="text-white" clickable to="/bucket">
             <q-item-section>
               <a href="/"> <img src="../assets/bucket.png" alt=""></a>
               <q-badge floating color="red">{{this.$store.state.quant}}</q-badge>
@@ -44,32 +67,24 @@
           <a href="/"> <img src="../assets/log.png" alt=""></a>
         </q-toolbar-title>
         <q-btn  flat class="q-pa-sm" icon="menu">
-          <q-menu max-width="600" anchor="top right" self="bottom right">
+          <q-menu content-class="bg-black text-white" max-width="600" anchor="top right" self="bottom right">
             <div class="row">
               <div class="column">
-                <q-item class="text-black text-center block" clickable to="/catalog">
+                <q-item class="text-center block" clickable to="/">
+                <q-item-section>
+                  <q-item-label>Главная</q-item-label>
+                </q-item-section>
+              </q-item>
+              <q-item class="text-center block" clickable to="/catalog">
                 <q-item-section>
                   <q-item-label>Каталог</q-item-label>
                 </q-item-section>
               </q-item>
-              <q-item class="text-black text-center block" clickable to="/contacts">
+              <q-item class="text-center block" clickable to="/categories">
                 <q-item-section>
-                  <q-item-label>Контакты</q-item-label>
+                  <q-item-label>Личный кабинет</q-item-label>
                 </q-item-section>
               </q-item>
-              <q-item class="text-black text-center block" clickable to="/account">
-                <q-item-section>
-                  <q-item-label>Аккаунт</q-item-label>
-                </q-item-section>
-              </q-item>
-              </div>
-
-              <q-separator inset vertical />
-
-              <div class="column justify-around items-center">
-                <q-btn class="block q-ma-sm" icon="search"/>
-                <q-btn class="block q-ma-sm" to="/account" color="primary" label="Вход" />
-                <q-btn class="block q-ma-sm" to="/reg" color="amber" label="Регистрация" />
               </div>
             </div>
           </q-menu>
@@ -92,17 +107,17 @@
           </q-item>
         </q-list>
         <q-list class="flex justify-end items-center">
-          <q-item class="text-white justify-end" clickable to="/">
+          <q-item class="text-white justify-end" clickable to="/articles">
             <q-item-section>
-              <img src="../assets/instagramm.png" alt="" >
+              <img src="../assets/instagramm.png" alt="">
             </q-item-section>
           </q-item>
-          <q-item class="text-white justify-end" clickable to="/">
+          <q-item class="text-white justify-end" clickable to="/articles">
             <q-item-section>
               <img src="../assets/google.png" alt="">
             </q-item-section>
           </q-item>
-          <q-item class="text-white justify-end" clickable to="/">
+          <q-item class="text-white justify-end" clickable to="/articles">
             <q-item-section>
               <img src="../assets/vk.png" alt="">
             </q-item-section>
@@ -119,7 +134,6 @@ export default {
   data () {
     return {
       text: '',
-      search: '',
       model: '',
       width: 0
     }
