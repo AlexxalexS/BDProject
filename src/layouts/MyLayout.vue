@@ -54,7 +54,7 @@
               <img src="../assets/lk.png" alt="">
             </q-item-section>
           </q-item>
-          <q-item class="text-white" clickable to="/bucket">
+          <q-item class="text-white" clickable to="/basket">
             <q-item-section>
               <a href="/"> <img src="../assets/bucket.png" alt=""></a>
               <q-badge floating color="red">{{this.$store.state.quant}}</q-badge>

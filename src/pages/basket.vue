@@ -2,51 +2,13 @@
 <div class="q-py-lg q-px-md">
   <div class="row">
     <div class="col-1"></div>
-      <div class="col-6 q-mt-xl">
+      <div class="col-5 q-mt-xl">
       <div class="text-h5">Ваш заказ :</div>
         <div class="bg-grey-3  q-py-md q-pa-lg">
-          <q-card class="row  my-card bg-grey-3   no-border no-shadow">
-          <q-card-section class="col-3">
-            <img src="../statics/img/vape1.png" alt="">
-          </q-card-section>
-          <q-card-section class="col-9 flex column items-starte justify-between">
-            <q-item-label class="text-h6">VOOPOO Vinci - набор</q-item-label>
-            <q-item-label class="text-h6">2890 &#8381;</q-item-label>
-            <q-item-label>
-              <q-btn outline color="accent" label="В корзину"/>
-            </q-item-label>
-          </q-card-section >
-          <q-separator inset />
-        </q-card>
-        <q-card class="row q-pt-lg my-card bg-grey-3   no-border no-shadow">
-          <q-card-section class="col-3">
-            <img src="../statics/img/vape1.png" alt="">
-          </q-card-section>
-          <q-card-section class="col-9 flex column items-starte justify-between">
-            <q-item-label class="text-h6">VOOPOO Vinci - набор</q-item-label>
-            <q-item-label class="text-h6">2890 &#8381;</q-item-label>
-            <q-item-label>
-              <q-btn outline color="accent" label="В корзину"/>
-            </q-item-label>
-          </q-card-section >
-          <q-separator inset />
-        </q-card>
-          <q-card class="row q-pt-lg my-card bg-grey-3   no-border no-shadow">
-            <q-card-section class="col-3">
-              <img src="../statics/img/vape1.png" alt="">
-            </q-card-section>
-            <q-card-section class="col-9 flex column items-starte justify-between">
-              <q-item-label class="text-h6">VOOPOO Vinci - набор</q-item-label>
-              <q-item-label class="text-h6">2890 &#8381;</q-item-label>
-              <q-item-label>
-                <q-btn outline color="accent" label="В корзину"/>
-              </q-item-label>
-            </q-card-section >
-            <q-separator inset />
-          </q-card>
           <q-card-section class="text-h5 flex justify-end items-end">Итого: 4370 &#8381;</q-card-section>
         </div>
     </div>
+    <div class="col-1"></div>
     <!--<div class="col-1"></div>-->
     <div class=" q-ml-xl col-4 q-mt-xl">
       <div class="text-h5 q-mb-lg">Оформление заказа</div>
@@ -107,7 +69,7 @@
             </q-radio>
           </div>
         </div>
-        <div class="flex justify-center ">
+        <div class="flex justify-start q-mt-xl">
           <q-btn label="Завершить оформление заказа" type="submit" color="primary"/>
         </div>
       </q-form>
