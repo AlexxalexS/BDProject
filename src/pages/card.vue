@@ -16,9 +16,9 @@
                       thumbnails
                       infinite
                     >
-                      <q-carousel-slide :name="1" img-src="../statics/img/11.png" style="width: "/>
-                      <q-carousel-slide :name="2" img-src="../statics/img/22.png" />
-                      <q-carousel-slide :name="3" img-src="../statics/img/33.png"/>
+                      <q-carousel-slide :name="1" img-src="../statics/img/image1.png" style="height: 80%; width: auto"/>
+                      <q-carousel-slide :name="2" img-src="../statics/img/image2.png" style="height: 80%; width: auto"/>
+                      <q-carousel-slide :name="3" img-src="../statics/img/image3.png" style="height: 80%; width: auto"/>
                     </q-carousel>
                   </div>
                   <div class="q-pa-md flex justify-center ">
@@ -26,7 +26,7 @@
                       <q-rating
                         v-model="ratingModel"
                         size="2.2em"
-                        color="purple"
+                        color="red-8"
                         icon="star_border"
                         icon-selected="star"
                       />
@@ -38,10 +38,11 @@
                     <div class="text-h5 q-pb-xl">Электронный испаритель Logic Compact (350 mAh)</div>
                   </q-card-section>
                   <q-card-section class="">
-                    <div class="text-h6 text-weight-light text-grey-9">Артикул: 93624 <br>
+                    <div class="text-h6">Артикул: 93624 <br>
                       Тип затяжки: Сигаретная<br>
                       Емкость аккумулятора: 350 мАч<br>
-                      Объем бака атомайзера:1.6 мл<br>
+                      Объем бака атомайзера:<br>
+                      1.6 мл<br>
                     </div>
                   </q-card-section>
                       <q-card-section class="  ">
@@ -53,14 +54,13 @@
                 </div>
               </div>
             </q-card>
-            <div class="q-pa-md q-mt-xl">
+            <div class="q-pa-md">
               <div class="q-gutter-y-md" >
-                <q-card class="row no-shadow">
-                  <div class="col-8"></div>
+                <q-card>
                   <q-tabs
                     v-model="tab"
                     dense
-                    class="col-4 bg-grey-3"
+                    class="bg-grey-3"
                     active-color="primary"
                     indicator-color="primary"
                     align="justify"

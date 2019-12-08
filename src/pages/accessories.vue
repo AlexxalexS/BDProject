@@ -1,6 +1,9 @@
 <template>
   <q-page class="q-py-lg q-px-md">
-    <div class="container q-py-lg">
+    <div class="q-py-lg">
+      <div class="col-12">
+        <div class="text-h2 text-center q-mb-xl"> Аксессуары </div>
+      </div>
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
