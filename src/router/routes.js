@@ -59,6 +59,14 @@ const routes = [
       {
         path: 'card',
         component: () => import('pages/card.vue')
+      },
+      {
+        path: 'basket',
+        component: () => import('pages/basket.vue')
+      },
+      {
+        path: 'account',
+        component: () => import('pages/account.vue')
       }
     ]
   },

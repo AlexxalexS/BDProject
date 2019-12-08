@@ -8,7 +8,9 @@
       <q-card-section>
         <div class="row flex items-center justify-center ">
           <div class="col-12 text-h5 text-center  text-red-8">{{item.price}} руб./шт</div>
-          <div class="col-12 flex q-pt-lg justify-center items-center"><q-btn outline color="accent" label="В корзину"/></div>
+          <div class="col-12 flex q-pt-lg justify-center items-center">
+            <q-btn outline color="accent" v-on:click="buyItem(itemid)" label="В корзину"/>
+          </div>
         </div>
       </q-card-section>
     </q-card>
@@ -16,25 +18,25 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
   name: 'item_catalog',
   props: ['item'],
   data () {
     return {
+      itemid: this.item.id
     }
   },
   methods: {
     fuf () {
       return '../statics/img/' + this.item.id + '.png'
-    }
+    },
+    ...mapActions({
+      buyItem: 'addToItems'
+    })
   }
 }
 </script>
 
 <style lang="sass">
-  .article
-    overflow: hidden
-    display: -webkit-box
-    -webkit-line-clamp: 3
-    -webkit-box-orient: vertical
 </style>

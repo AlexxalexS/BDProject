@@ -9,11 +9,17 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     quant: 7,
-    items: []
+    items: [],
+    order: []
   },
   mutations: {
+    BUY (state, itemid) {
+      state.order.push(itemid)
+      console.log(state.order)
+    }
   },
   actions: {
+    addToItems: ({ commit }, item) => commit('BUY', item)
   },
   modules: {
     article,
